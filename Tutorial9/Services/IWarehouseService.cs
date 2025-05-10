@@ -4,5 +4,7 @@ namespace Tutorial9.Services;
 
 public interface IWarehouseService
 {
-    Task<List<WarehouseDTO>> GetWarehouse();
+    Task<object> PostWarehouse(WarehouseDTO warehouseDTO);
+    
+    Task<object> PostWarehouseProc(WarehouseDTO warehouseDTO);
 }
